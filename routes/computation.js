@@ -20,7 +20,7 @@ router.get('/', function(req, res, next) {
 
   res.render('computaion', { 
     title: 'Computation',
-  Calculate: 'applied to ' + s+ ' is ' + cos,
+  Calculate: 'applied to ' + v+ ' is ' + cos,
   c1: 'applied to ' + v + ' is ' + asin,
   c2: 'applied to ' + v + ' is ' + asinh,
  });
