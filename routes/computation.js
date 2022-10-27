@@ -4,25 +4,25 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-  var v;
+  var x;
 
   var random=Math.random();
   console.log(req.query.v);
-  x=req.query.v;
+  x=req.query.x;
 
-  if(v==undefined){
-    v=random.toFixed(2);
+  if(x==undefined){
+    x=random.toFixed(2);
   }
 
-  let cos=Math.cos(v).toFixed(2)
-  let asin=Math.asin(v).toFixed(2)
-  let asinh=Math.asinh(v).toFixed(2)
+  let cos=Math.cos(x).toFixed(2)
+  let asin=Math.asin(x).toFixed(2)
+  let asinh=Math.asinh(x).toFixed(2)
 
   res.render('computation', { 
     title: 'Computation',
-  Calculate: 'applied to ' + v+ ' is ' + cos,
-  c1: 'applied to ' + v + ' is ' + asin,
-  c2: 'applied to ' + v + ' is ' + asinh,
+  v1: 'applied to ' + x+ ' is ' + cos,
+  v2: 'applied to ' + x + ' is ' + asin,
+  v3: 'applied to ' + x + ' is ' + asinh,
  });
 });
 
