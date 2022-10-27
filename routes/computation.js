@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
   let asin=Math.asin(v).toFixed(2)
   let asinh=Math.asinh(v).toFixed(2)
 
-  res.render('computaion', { 
+  res.render('computation', { 
     title: 'Computation',
   Calculate: 'applied to ' + v+ ' is ' + cos,
   c1: 'applied to ' + v + ' is ' + asin,
